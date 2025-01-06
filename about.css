@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #03045e;
+  }
+
+
+
+  
+  /* About Us Section */
+  .about-us {
+    background: rgba(3, 4, 94, 0.7); /* Glassy effect */
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 150px !important;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* About Us Header */
+  .about-us-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fca311;
+    text-align: center;
+  }
+  
+  .about-us-header p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .about-us-header i {
+    margin-right: 8px;
+  }
+  
+  .highlight-text {
+    font-weight: bold;
+    color: #fca311;
+  }
+  
+  /* About Us Content */
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-us-text, .about-us-history {
+    padding: 10px;
+    background: rgba(3, 4, 94, 0.6); /* Glassy background */
+    border-radius: 8px;
+  }
+  
+  .about-us-text h2, .about-us-history h2 {
+    color: #fca311;
+    font-size: 2rem;
+  }
+  
+  .about-us-text p, .about-us-history p {
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Icons Section */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .icon-item {
+    text-align: center;
+    background: rgba(3, 4, 94, 0.5); /* Glassy effect */
+    border-radius: 8px;
+    padding: 15px;
+    width: 120px;
+  }
+  
+  .icon-item i {
+    font-size: 2rem;
+    color: #fca311;
+  }
+  
+  .icon-item p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .about-us-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-us-header p {
+      font-size: 1.2rem;
+    }
+  
+    .about-us-content {
+      flex-direction: column;
+    }
+  
+    .about-us-text, .about-us-history {
+      padding: 10px;
+    }
+  
+    .icons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .icon-item {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-us-header p {
+      font-size: 1rem;
+    }
+  
+    .about-us-text h2, .about-us-history h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-us-text p, .about-us-history p {
+      font-size: 0.9rem;
+    }
+  }
+  

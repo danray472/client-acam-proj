@@ -1,0 +1,84 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    margin-top: 100px !important;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Container for Courses */
+.courses-container {
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #03045e; /* Primary Blue */
+    margin-bottom: 30px;
+}
+
+/* Course Categories */
+.course-category {
+    margin-bottom: 40px;
+}
+
+/* Category Header */
+.course-category h2 {
+    color: #03045e;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Course List */
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.course-list li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Icons */
+.fas {
+    color: #fca311;
+    ; /* Primary Blue */
+    margin-right: 10px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .courses-container {
+        padding: 30px;
+    }
+
+    .course-category h2 {
+        font-size: 1.5em;
+    }
+
+    .course-list li {
+        font-size: 1em;
+    }
+}

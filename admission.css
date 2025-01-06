@@ -1,0 +1,95 @@
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #03045e;
+    margin: 0;
+    padding: 0;
+}
+
+.admission-form {
+    margin-top: 150px !important;
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #03045e;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #03045e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #03045e;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: #fff;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #fca311;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #03045e;
+}
+
+.course-select-container {
+    position: relative;
+}
+
+.course-select-container select {
+    width: 100%;
+}
+
+.form-group i {
+    margin-right: 10px;
+    color: #fca311;
+}
+
+.optional-msg {
+    font-style: italic;
+    color: #555;
+}
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Admission Request Form</title>
+   
+</head>
+<body>
+ <!-- Contact Info -->
+ <div class="contact-info">
+    <span>WhatsApp: +254 700 000000</span>
+    <a href="mailto:info@acamcollege.com">Email: info@acamcollege.com</a>
+  </div>
+
+ <!-- Header -->
+ <header class="header">
+    <div class="logo">
+      <img class="logo-img" src="assets/logo.png" alt="ACAM College Logo">
+      ACAM College
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="admission.html">Admission</a>
+      
+      <a href="courses.html">Our Courses</a>
+      
+    </nav>
+  </header>
+  
+    
+    
+    <script>
+  // Toggle menu open/close
+  function toggleMenu() {
+    const nav = document.querySelector('.desktop-nav');
+    const hamburger = document.querySelector('.hamburger');
+    
+    // Toggle active class for menu and hamburger
+    nav.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function (e) {
+    const nav = document.querySelector('.desktop-nav');
+    const hamburger = document.querySelector('.hamburger');
+  
+    // Check if the click is outside the menu and hamburger
+    if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+      nav.classList.remove('active');
+      hamburger.classList.remove('active');
+    }
+  });
+  
+  
+    </script>
+
+
+
+
+    <section class="admission-form">
+        <h1>Admission Request Form</h1>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone"><i class="fas fa-phone-alt"></i> Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <!-- Course Selection -->
+            <div class="form-group">
+                <label for="course"><i class="fas fa-graduation-cap"></i> Course</label>
+                <div class="course-select-container">
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>Select your course</option>
+
+                        <!-- SCHOOL OF AVIATION AND AIRPORT OPERATIONS -->
+                        <optgroup label="SCHOOL OF AVIATION AND AIRPORT OPERATIONS">
+                            <option value="Diploma in Cabin Crew and Air Hostess">Diploma in Cabin Crew and Air Hostess</option>
+                            <option value="Diploma in Air Travel (Foundation)">Diploma in Air Travel (Foundation)</option>
+                            <option value="Diploma in Air Travel (Consultancy)">Diploma in Air Travel (Consultancy)</option>
+                            <option value="Diploma in Air Travel (Management)">Diploma in Air Travel (Management)</option>
+                            <option value="Diploma/ Certificate in Air Guiding / Administration">Diploma/ Certificate in Air Guiding / Administration</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF JOURNALISM AND MASS COMMUNICATION -->
+                        <optgroup label="SCHOOL OF JOURNALISM AND MASS COMMUNICATION">
+                            <option value="Diploma in Journalism & Media Studies (ICM)">Diploma in Journalism & Media Studies (ICM)</option>
+                            <option value="Diploma in Sound Engineering">Diploma in Sound Engineering</option>
+                            <option value="Diploma in TV/Radio Film Production">Diploma in TV/Radio Film Production</option>
+                            <option value="Diploma in Photography">Diploma in Photography</option>
+                            <option value="Diploma in Print Journalism">Diploma in Print Journalism</option>
+                            <option value="Diploma in Broadcast Journalism">Diploma in Broadcast Journalism</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF COMPUTER & COMPUTER STUDIES -->
+                        <optgroup label="SCHOOL OF COMPUTER & COMPUTER STUDIES">
+                            <option value="Diploma in Information Communication Technology (ICT)">Diploma in Information Communication Technology (ICT)</option>
+                            <option value="Certificate in Information Communication Technology (ICT)">Certificate in Information Communication Technology (ICT)</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF HOSPITALITY AND CATERING -->
+                        <optgroup label="SCHOOL OF HOSPITALITY AND CATERING">
+                            <option value="Diploma in Hotel & Catering Management">Diploma in Hotel & Catering Management</option>
+                            <option value="Diploma in Nutrition & Dietetics">Diploma in Nutrition & Dietetics</option>
+                            <option value="Diploma in Housekeeping Management & Accommodation Studies">Diploma in Housekeeping Management & Accommodation Studies</option>
+                            <option value="Certificate in Nutrition & Dietetics">Certificate in Nutrition & Dietetics</option>
+                            <option value="Certificate in Housekeeping Management & Accommodation Studies">Certificate in Housekeeping Management & Accommodation Studies</option>
+                            <option value="Certificate in Food & Beverage, Production, Sales & Service (KNEC)">Certificate in Food & Beverage, Production, Sales & Service (KNEC)</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF ENGINEERING -->
+                        <optgroup label="SCHOOL OF ENGINEERING">
+                            <option value="Artisan in Electrical engineering">Artisan in Electrical Engineering</option>
+                            <option value="Certificate in Electrical & Electronics Engineering">Certificate in Electrical & Electronics Engineering</option>
+                            <option value="Diploma in Electrical & Electronics Engineering">Diploma in Electrical & Electronics Engineering</option>
+                            <option value="Certificate in Mechanical Engineering">Certificate in Mechanical Engineering</option>
+                            <option value="Diploma in Mechanical Engineering">Diploma in Mechanical Engineering</option>
+                            <option value="Diploma in Aeronautical Engineering">Diploma in Aeronautical Engineering</option>
+                            <option value="Refrigeration and Air Conditioning">Refrigeration and Air Conditioning</option>
+                            <option value="Certificate in Automotive Engineering">Certificate in Automotive Engineering</option>
+                            <option value="Diploma in Automotive Engineering">Diploma in Automotive Engineering</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF BUSINESS -->
+                        <optgroup label="SCHOOL OF BUSINESS">
+                            <option value="Certificate & Diploma in Information Science">Certificate & Diploma in Information Science</option>
+                            <option value="Certificate & Diploma in Seaport and Maritime Operations">Certificate & Diploma in Seaport and Maritime Operations</option>
+                            <option value="Certificate & Diploma in Sales & Marketing Management">Certificate & Diploma in Sales & Marketing Management</option>
+                            <option value="Certificate & Diploma in Business Management">Certificate & Diploma in Business Management</option>
+                            <option value="Certificate & Diploma in Human Resource Management">Certificate & Diploma in Human Resource Management</option>
+                            <option value="Certificate & Diploma in Front Office Operations, Public Relations, Customer care">Certificate & Diploma in Front Office Operations, Public Relations, Customer Care</option>
+                            <option value="Certificate, Diploma & Higher Diploma in Secretarial Management">Certificate, Diploma & Higher Diploma in Secretarial Management</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF COMMUNITY DEVELOPMENT AND SOCIAL WORK -->
+                        <optgroup label="SCHOOL OF COMMUNITY DEVELOPMENT AND SOCIAL WORK">
+                            <option value="Diploma/ Certificate in Community / Social Work">Diploma/ Certificate in Community / Social Work</option>
+                            <option value="Diploma/ Certificate in Project Development">Diploma/ Certificate in Project Development</option>
+                            <option value="Diploma in HIV/Testing & Counselling">Diploma in HIV/Testing & Counselling</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF LANGUAGES -->
+                        <optgroup label="SCHOOL OF LANGUAGES">
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="English">English</option>
+                            <option value="German">German</option>
+                        </optgroup>
+
+                        <!-- SHORT COURSES IN COMPUTER STUDIES AND APPLICATIONS -->
+                        <optgroup label="SHORT COURSES IN COMPUTER STUDIES AND APPLICATIONS">
+                            <option value="Computer Studies">Computer Studies</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                <textarea id="message" name="message" placeholder="Write a message (optional)"></textarea>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Founded in 2012, ACAM College is dedicated to providing quality education and fostering innovation.</p>
+        <div class="footer-icons">
+          <div class="icon-box">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Founded in 2012</span>
+          </div>
+          <div class="icon-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Location: Mfangano Street</span>
+            <p>Old Mitihani House, 2nd Floor</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="courses.html">Our Courses</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-credits">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: info@acamcollege.com</li>
+          <li>Phone: +254 700 123 456</li>
+          <li>Website: <a href="https://acamcollege.com">acamcollege.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <a href="#top" class="back-to-top">
+      &#x25B2; <!-- Upwards pointing arrow -->
+    </a>
+    
+  
+    <div class="footer-bottom">
+      &copy; 2024 <span>ACAM College</span>. All Rights Reserved. Powered by Sahihi Media.
+    </div>
+  </footer>
+</body>
+</html>
