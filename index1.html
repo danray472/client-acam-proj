@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACAM College</title>
+  
+</head>
+<body>
+
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <span>WhatsApp: +254 700 000000</span>
+    <a href="mailto:info@acamcollege.com">Email: info@acamcollege.com</a>
+  </div>
+
+ <!-- Header -->
+ <header class="header">
+  <div class="logo">
+    <img class="logo-img" src="assets/logo.png" alt="ACAM College Logo">
+    ACAM College
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="desktop-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="admission.html">Admission</a>
+    <a href="courses.html">Our Courses</a>
+    
+  </nav>
+</header>
+
+  
+  
+  <script>
+// Toggle menu open/close
+function toggleMenu() {
+  const nav = document.querySelector('.desktop-nav');
+  const hamburger = document.querySelector('.hamburger');
+  
+  // Toggle active class for menu and hamburger
+  nav.classList.toggle('active');
+  hamburger.classList.toggle('active');
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', function (e) {
+  const nav = document.querySelector('.desktop-nav');
+  const hamburger = document.querySelector('.hamburger');
+
+  // Check if the click is outside the menu and hamburger
+  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+    nav.classList.remove('active');
+    hamburger.classList.remove('active');
+  }
+});
+
+
+  </script>
+  
+
+  <head>
+    <link rel="preload" href="assets/slide_img5.jpg" as="image">
+    <link rel="preload" href="assets/slide_img2.jpg" as="image">
+    <link rel="preload" href="assets/slide_img3.jpg" as="image">
+    <link rel="preload" href="assets/slide_img4.jpg" as="image">
+    <link rel="preload" href="assets/slide_img5.jpg" as="image">
+</head>
+
+<body>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide active">
+            <img src="assets/slide_img5.jpg" alt="Slide 1">
+            <div class="caption">We offer KNEC Certified Programs</div>
+        </div>
+        <div class="slide">
+            <img src="assets/slide_img2.jpg" alt="Slide 2">
+            <div class="caption">A Leading College with Awards in the Industrial Field</div>
+        </div>
+        <div class="slide">
+            <img src="assets/slide_img3.jpg" alt="Slide 3">
+            <div class="caption">Providing Online Classes for Flexible Learning</div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        // Function to show the current slide
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active'); // Remove 'active' class from all slides
+                if (i === index) {
+                    slide.classList.add('active'); // Add 'active' class to the current slide
+                }
+            });
+        }
+
+        // Function to go to the next slide
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides; // Loop back to the first slide
+            showSlide(currentIndex);
+        }
+
+        // Show the first slide initially
+        showSlide(currentIndex);
+        setInterval(nextSlide, 6000); // Change slides every 6 seconds
+    </script>
+</body>
+
+
+
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <img src="assets/staff.jpg">
+    <p>Africa College of Aviation and Management is a professional technical and Management organization committed to the promotion of excellence and integrity  in the practice of both technical and business courses .The college was established in the year 2012 as supreme institute that provides aviation and business services to enhance equitable knowledge –gain within and outside Africa ..</p>
+    <button>Lean More</button>
+  </section>
+
+
+  <!--what we offer-->
+<section>
+  <section class="features-section">
+    <div class="features">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h3>PROGRAMS</h3>
+        <p>We offer KNEC Certified Programs</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <h3>ONLINE ED</h3>
+        <p>We provide online classes to adapt to your work schedule</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>AWARDS</h3>
+        <p>A leading College with awards in the industrial field</p>
+      </div>
+      <div class="feature-discover">
+        <h4>Don't Hesitate to Ask</h4>
+        <h2>Discover ACAM</h2>
+        <a href="./about.html" class="discover-icon">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      
+    </div>
+    <div class="vision-section">
+      <h2>OUR VISION</h2>
+      <p>
+        A universe institution in Africa meant to impart knowledge and transform
+        learners to be future leaders and mentors.
+      </p>
+      <a href="./assets/ACAM-ADMISSION-FORM.pdf" target="_blank" class="registration-btn">
+        REGISTRATION DOCUMENTS <span>NEW</span>
+      </a>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</section>
+
+<!--section bronchure-->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .brochure-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .brochure-container img {
+    width: 100%;
+    
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .brochure-caption {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .brochure-text {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #333;
+  }
+
+  .download-button {
+    background-color: #fca311;
+    
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .download-button:hover {
+    background-color: #03045e; /* Darker shade on hover */
+  }
+</style>
+</head>
+<body>
+<div class="brochure-container">
+  <img src="assets/bronchure.jpg" alt="Brochure">
+  <div class="brochure-caption">Our Latest Brochure</div>
+  <p class="brochure-text">Get a copy of our brochure for detailed information about our programs and offerings.</p>
+  <a href="assets/bronchure.jpg" class="download-button" download>Download Now</a>
+</div>
+
+<!--courses-->
+<section class="courses-section">
+  <h2>Our Courses</h2>
+  <p>Discover the programs designed to help you achieve your goals.</p>
+  <div class="courses-grid">
+    <div class="course-category">
+      <h3>School of Aviation and Airport Operations</h3>
+      <ul>
+        <li>Diploma in Cabin Crew and Air Hostess</li>
+        <li>Diploma in Air Travel (Foundation)</li>
+        <li>Diploma in Air Travel (Consultancy)</li>
+        <li>Diploma in Air Travel (Management)</li>
+        <li>Diploma/Certificate in Air Guiding/Administration</li>
+      </ul>
+    </div>
+    <div class="course-category">
+      <h3>School of Journalism and Mass Communication</h3>
+      <ul>
+        <li>Diploma in Journalism & Media Studies (ICM)</li>
+        <li>Diploma in Sound Engineering</li>
+        <li>Diploma in TV/Radio Film Production</li>
+        <li>Diploma in Photography</li>
+      </ul>
+    </div>
+    <div class="course-category">
+      <h3>School of Engineering</h3>
+      <ul>
+        <li>Diploma in Aeronautical Engineering</li>
+        <li>Certificate in Aeronautical Engineering</li>
+        <li>Diploma in Electrical & Electronics Engineering</li>
+        <li>Certificate in Electrical & Electronics Engineering</li>
+      </ul>
+    </div>
+    <div class="course-category">
+      <h3>School of Hospitality and Catering</h3>
+      <ul>
+        <li>Diploma in Hotel & Catering Management</li>
+        <li>Diploma in Nutrition & Dietetics</li>
+        <li>Diploma in Housekeeping Management & Accommodation Studies</li>
+        <li>Certificate in Nutrition & Dietetics</li>
+        <li>Certificate in Housekeeping Management & Accommodation Studies</li>
+        <li>Certificate in Food & Beverage Production, Sales & Service (KNEC)</li>
+      </ul>
+      
+    </div>
+  </div>
+  <a href="courses.html" class="view-all-courses-btn">
+    View All Courses <i class="fas fa-arrow-right"></i>
+  </a>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Us</h3>
+      <p>Founded in 2012, ACAM College is dedicated to providing quality education and fostering innovation.</p>
+      <div class="footer-icons">
+        <div class="icon-box">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Founded in 2012</span>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Location: Mfangano Street</span>
+          <p>Old Mitihani House, 2nd Floor</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="courses.html">Our Courses</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-credits">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Email: info@acamcollege.com</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Website: <a href="https://acam.ac.ke">acamcollege.ac.ke</a></li>
+      </ul>
+    </div>
+  </div>
+  <a href="#top" class="back-to-top">
+    &#x25B2; <!-- Upwards pointing arrow -->
+  </a>
+  
+
+  <div class="footer-bottom">
+    &copy; 2025 <span>ACAM College</span>. All Rights Reserved. 
+  </div>
+</footer>
+
+
+  <script>
+    // Slideshow script
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 3000);
+  </script>
+
+</body>
+</html>
