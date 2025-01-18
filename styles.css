@@ -656,7 +656,7 @@
   
 /* Footer */
 .footer {
-  background: #1c1c1c;
+  background: #fca311;
   color: #fff;
   padding: 40px 20px;
   font-size: 14px;
@@ -683,7 +683,7 @@
 .footer-credits h3 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #fca311;
+  color: #03045e;
 }
 
 .footer-about p {
@@ -705,7 +705,7 @@
 
 .icon-box i {
   font-size: 18px;
-  color: #fca311;
+  color: #03045e;
 }
 
 .footer-links ul,
@@ -726,11 +726,11 @@
 }
 
 .footer-links ul li a:hover {
-  color: #fca311;
+  color: #03045e;
 }
 
 .footer-credits ul li a {
-  color: #fca311;
+  color: #03045e1;
   text-decoration: none;
 }
 
@@ -742,7 +742,7 @@
 }
 
 .footer span {
-  color: #fca311;
+  color: #03045e;
 }
 
 /* Responsive Design */

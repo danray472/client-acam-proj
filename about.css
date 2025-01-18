@@ -137,4 +137,50 @@ body {
       font-size: 0.9rem;
     }
   }
+
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .media-item {
+    flex: 1 1 45%;
+    position: relative;
+  }
+  
+  .media-item video,
+  .media-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .media-item {
+      flex: 1 1 100%;
+    }
+  
+    .overlay-text {
+      position: static;
+      background-color: transparent;
+      color: #000;
+      padding: 0;
+    }
+  }
+  
   

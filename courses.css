@@ -3,6 +3,7 @@
     padding: 40px 20px;
     background-color: #f4f4f4;
     text-align: center;
+    margin-top: 80px;
   }
   
   .courses-section h2 {
@@ -93,4 +94,79 @@
       padding: 8px 16px;
     }
   }
+
+  /* External Courses Section */
+.external-courses-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .image-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .links-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .course-link {
+    display: inline-block;
+    margin: 10px 0;
+    background: #fca311;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .course-link:hover {
+    background: #03045e;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .image-container,
+    .links-container {
+      min-width: 100%;
+    }
+  
+    .course-link {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  h2{
+    color: #03045e;
+  }
+  
   
