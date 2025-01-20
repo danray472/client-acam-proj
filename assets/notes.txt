@@ -1,0 +1,105 @@
+Our admission process is designed to be easy and accessible with a focus on helping you start your academic journey quickly and efficiently.
+Our courses structure is flexible and convenient to enable you study whenever and wherever you are.
+
+Our students
+we have vibrant online community of over 2000 students studying with us. Our students are well equipped with the skills, knowledge and confidence to thrive in their chosen careers and make a positive impact on the world.
+
+At RCM College, we are committed to providing our students with a world-class education that will prepare them for success in their chosen careers. We promise to offer a diverse range of high-quality programs. We will provide a supportive and inclusive learning environment that fosters critical thinking, creativity, and collaboration, as we as opportunities for hands-on learning and real-world experience.
+
+Visit us at Stanbank House 1st Floor along Moi Avenue, Nairobi
+
+studies@rcmonlinecollege.co.ke
+793 555 000
+
+At RCM ONLINE COLLENGE, we are committed to providing our students with a world-class education that will prepare them for success in their chosen careers. We promise to offer a diverse range of high-quality programs. we will provide a supportive and inclusive learning environment that fosters critical thinking, creativity, and collaboration, as well as opportunities for hands-on learning and real-world experience.
+
+RCM College is a School Offering Courses for KASNEB, KNEC and Other Short courses for proficiency in Advanced Excel, QuickBook and more...
+
+    <div class="form-group">
+                <label for="course"><i class="fas fa-graduation-cap"></i> Course</label>
+                <div class="course-select-container">
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>Select your course</option>
+
+                        <!-- SCHOOL OF AVIATION AND AIRPORT OPERATIONS -->
+                        <optgroup label="SCHOOL OF AVIATION AND AIRPORT OPERATIONS">
+                            <option value="Diploma in Cabin Crew and Air Hostess">Diploma in Cabin Crew and Air Hostess</option>
+                            <option value="Diploma in Air Travel (Foundation)">Diploma in Air Travel (Foundation)</option>
+                            <option value="Diploma in Air Travel (Consultancy)">Diploma in Air Travel (Consultancy)</option>
+                            <option value="Diploma in Air Travel (Management)">Diploma in Air Travel (Management)</option>
+                            <option value="Diploma/ Certificate in Air Guiding / Administration">Diploma/ Certificate in Air Guiding / Administration</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF JOURNALISM AND MASS COMMUNICATION -->
+                        <optgroup label="SCHOOL OF JOURNALISM AND MASS COMMUNICATION">
+                            <option value="Diploma in Journalism & Media Studies (ICM)">Diploma in Journalism & Media Studies (ICM)</option>
+                            <option value="Diploma in Sound Engineering">Diploma in Sound Engineering</option>
+                            <option value="Diploma in TV/Radio Film Production">Diploma in TV/Radio Film Production</option>
+                            <option value="Diploma in Photography">Diploma in Photography</option>
+                            <option value="Diploma in Print Journalism">Diploma in Print Journalism</option>
+                            <option value="Diploma in Broadcast Journalism">Diploma in Broadcast Journalism</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF COMPUTER & COMPUTER STUDIES -->
+                        <optgroup label="SCHOOL OF COMPUTER & COMPUTER STUDIES">
+                            <option value="Diploma in Information Communication Technology (ICT)">Diploma in Information Communication Technology (ICT)</option>
+                            <option value="Certificate in Information Communication Technology (ICT)">Certificate in Information Communication Technology (ICT)</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF HOSPITALITY AND CATERING -->
+                        <optgroup label="SCHOOL OF HOSPITALITY AND CATERING">
+                            <option value="Diploma in Hotel & Catering Management">Diploma in Hotel & Catering Management</option>
+                            <option value="Diploma in Nutrition & Dietetics">Diploma in Nutrition & Dietetics</option>
+                            <option value="Diploma in Housekeeping Management & Accommodation Studies">Diploma in Housekeeping Management & Accommodation Studies</option>
+                            <option value="Certificate in Nutrition & Dietetics">Certificate in Nutrition & Dietetics</option>
+                            <option value="Certificate in Housekeeping Management & Accommodation Studies">Certificate in Housekeeping Management & Accommodation Studies</option>
+                            <option value="Certificate in Food & Beverage, Production, Sales & Service (KNEC)">Certificate in Food & Beverage, Production, Sales & Service (KNEC)</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF ENGINEERING -->
+                        <optgroup label="SCHOOL OF ENGINEERING">
+                            <option value="Artisan in Electrical engineering">Artisan in Electrical Engineering</option>
+                            <option value="Certificate in Electrical & Electronics Engineering">Certificate in Electrical & Electronics Engineering</option>
+                            <option value="Diploma in Electrical & Electronics Engineering">Diploma in Electrical & Electronics Engineering</option>
+                            <option value="Certificate in Mechanical Engineering">Certificate in Mechanical Engineering</option>
+                            <option value="Diploma in Mechanical Engineering">Diploma in Mechanical Engineering</option>
+                            <option value="Diploma in Aeronautical Engineering">Diploma in Aeronautical Engineering</option>
+                            <option value="Refrigeration and Air Conditioning">Refrigeration and Air Conditioning</option>
+                            <option value="Certificate in Automotive Engineering">Certificate in Automotive Engineering</option>
+                            <option value="Diploma in Automotive Engineering">Diploma in Automotive Engineering</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF BUSINESS -->
+                        <optgroup label="SCHOOL OF BUSINESS">
+                            <option value="Certificate & Diploma in Information Science">Certificate & Diploma in Information Science</option>
+                            <option value="Certificate & Diploma in Seaport and Maritime Operations">Certificate & Diploma in Seaport and Maritime Operations</option>
+                            <option value="Certificate & Diploma in Sales & Marketing Management">Certificate & Diploma in Sales & Marketing Management</option>
+                            <option value="Certificate & Diploma in Business Management">Certificate & Diploma in Business Management</option>
+                            <option value="Certificate & Diploma in Human Resource Management">Certificate & Diploma in Human Resource Management</option>
+                            <option value="Certificate & Diploma in Front Office Operations, Public Relations, Customer care">Certificate & Diploma in Front Office Operations, Public Relations, Customer Care</option>
+                            <option value="Certificate, Diploma & Higher Diploma in Secretarial Management">Certificate, Diploma & Higher Diploma in Secretarial Management</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF COMMUNITY DEVELOPMENT AND SOCIAL WORK -->
+                        <optgroup label="SCHOOL OF COMMUNITY DEVELOPMENT AND SOCIAL WORK">
+                            <option value="Diploma/ Certificate in Community / Social Work">Diploma/ Certificate in Community / Social Work</option>
+                            <option value="Diploma/ Certificate in Project Development">Diploma/ Certificate in Project Development</option>
+                            <option value="Diploma in HIV/Testing & Counselling">Diploma in HIV/Testing & Counselling</option>
+                        </optgroup>
+
+                        <!-- SCHOOL OF LANGUAGES -->
+                        <optgroup label="SCHOOL OF LANGUAGES">
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="English">English</option>
+                            <option value="German">German</option>
+                        </optgroup>
+
+                        <!-- SHORT COURSES IN COMPUTER STUDIES AND APPLICATIONS -->
+                        <optgroup label="SHORT COURSES IN COMPUTER STUDIES AND APPLICATIONS">
+                            <option value="Computer Studies">Computer Studies</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+

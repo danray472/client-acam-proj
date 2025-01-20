@@ -308,25 +308,32 @@
   
   .slideshow-container {
     position: relative;
-    max-width: 100%;
-    height: 500px;
+    width: 100%;
+    height: 550px;
     overflow: hidden;
-    margin-top: 120px !important;
-    margin: auto;
+    margin-top: 100px;
+    /* margin-left: auto; */ /* Remove this line */
+}
+
+@media (max-width: 768px) {
+  .slideshow-container{
+    margin-top: 80px;
+  }
 }
 
 .slide {
     display: none; /* Hide all slides by default */
-    position: absolute;
-    width: 100%;
+    position: relative;
+    width: 100% !important;
     height: 100%;
     text-align: center;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .slide.active {
@@ -343,6 +350,14 @@
     font-weight: bold;
     background: rgba(0, 0, 0, 0.5); /* Dark background for better readability */
     padding: 10px;
+}
+
+
+.divider{
+  position: fixed;
+  top: 0;
+  margin-left: 0;
+  z-index: -1000;
 }
 
   
@@ -457,6 +472,7 @@
     font-size: 40px;
     margin-bottom: 10px;
     color: #fca311;
+    
   }
   
   .feature-discover {
@@ -658,7 +674,7 @@
 .footer {
   background: #fca311;
   color: #fff;
-  padding: 40px 20px;
+  padding: 26px 20px; /* Reduced padding to make the footer more compact */
   font-size: 14px;
 }
 
@@ -666,7 +682,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px; /* Reduced gap between footer items */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -682,25 +698,25 @@
 .footer-links h3,
 .footer-credits h3 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 8px; /* Reduced margin between the title and content */
   color: #03045e;
 }
 
 .footer-about p {
-  margin-bottom: 15px;
+  margin-bottom: 12px; /* Reduced margin for paragraphs */
   line-height: 1.6;
 }
 
 .footer-icons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px; /* Reduced gap between icons */
 }
 
 .icon-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px; /* Reduced gap between icons */
 }
 
 .icon-box i {
@@ -716,7 +732,7 @@
 
 .footer-links ul li,
 .footer-credits ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px; /* Reduced spacing between list items */
 }
 
 .footer-links ul li a {
@@ -736,8 +752,8 @@
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 10px; /* Reduced margin-top */
+  padding-top: 10px; /* Reduced padding-top */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -757,10 +773,10 @@
 /* Back-to-Top Arrow (Inside Footer) */
 .back-to-top {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px; /* Reduced margin-top */
   color: #ffffff;
-  font-size: 20px;
-  padding: 10px 15px;
+  font-size: 10px;
+  padding: 8px 12px; /* Reduced padding */
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
@@ -773,5 +789,75 @@
   transform: scale(1.1);
 }
 
-
+/* Partner Logos Section */
+.partners {
+  text-align: center;
   
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.partner-logo {
+  width: 80px;
+  height: 60px;
+  margin: 0 5px; /* Reduced margin */
+  border-radius: 20%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  animation: slide 10s linear infinite;
+}
+
+/* Animation for logos sliding from left to right */
+@keyframes slide {
+  0% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+/* Hover effect for logos */
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .partner-logo {
+      width: 50px; /* Smaller size for mobile devices */
+      height: 40px;
+  }
+}
+
+/* Optional animation for icons */
+.icon-pulse {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.icon-pulse {
+  display: inline;
+  vertical-align: middle;
+  animation: pulse 1.5s infinite ease-in-out;
+}

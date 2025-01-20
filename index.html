@@ -73,26 +73,16 @@ document.addEventListener('click', function (e) {
   </script>
   
 
-  <head>
-    <link rel="preload" href="assets/slid1.jpeg" as="image">
-    <link rel="preload" href="assets/slid2.jpeg" as="image">
-    <link rel="preload" href="assets/slid4.jpeg" as="image">
-    <link rel="preload" href="assets/slid5.jpeg" as="image">
-    <link rel="preload" href="assets/slid6.jpeg" as="image">
-</head>
 
-<body>
+
     <!-- Slideshow -->
     <div class="slideshow-container">
-        <div class="slide active">
-            <img src="assets/slide_img5.jpg" alt="Slide 1">
-            <div class="caption">We offer KNEC Certified Programs</div>
-        </div>
+       
         <div class="slide">
             <img src="assets/slid1.jpeg" alt="Slide 2">
             <div class="caption">A Leading College with Awards in the Industrial Field</div>
         </div>
-        <div class="slide">
+        <div class="slide hide-on-desktop">
             <img src="assets/slid2.jpeg" alt="Slide 3">
             <div class="caption">Providing Online Classes for Flexible Learning</div>
         </div>
@@ -104,12 +94,13 @@ document.addEventListener('click', function (e) {
           <img src="assets/slid5.jpeg" alt="Slide 2">
           <div class="caption">A Leading College with Awards in the Industrial Field</div>
       </div>
-      <div class="slide">
-          <img src="assets/slid7.jpeg" alt="Slide 3">
-          <div class="caption">Providing Online Classes for Flexible Learning</div>
-      </div>
+      <div class="slide hide-on-desktop">
+        <img src="assets/slid7.jpeg" alt="Slide 3">
+        <div class="caption">Providing Online Classes for Flexible Learning</div>
     </div>
-    <div class="slide active">
+    
+    
+    <div class="slide">
       <img src="assets/slid8.jpeg" alt="Slide 1">
       <div class="caption">We offer KNEC Certified Programs</div>
   </div>
@@ -120,8 +111,8 @@ document.addEventListener('click', function (e) {
   <div class="slide">
       <img src="assets/slid9 (2).jpeg" alt="Slide 3">
       <div class="caption">Providing Online Classes for Flexible Learning</div>
-  </div>
-    </div>
+  </div></div>
+    
 
     <script>
         let currentIndex = 0;
@@ -148,16 +139,16 @@ document.addEventListener('click', function (e) {
         showSlide(currentIndex);
         setInterval(nextSlide, 6000); // Change slides every 6 seconds
     </script>
-</body>
 
 
 
+<div class="divider"> <img src="assets/about-img.jpeg"></div>
 
   <!-- About Section -->
   <section class="about">
     <h2>About Us</h2>
     <img src="assets/staff_img.jpeg">
-    <p>At RCM COLLENGE, we are committed to providing our students with a world-class education that will prepare them for success in their chosen careers. We promise to offer a diverse range of high-quality programs. we will provide a supportive and inclusive learning environment that fosters critical thinking, creativity, and collaboration, as well as opportunities for hands-on learning and real-world experience.</p>
+    <p>At RCM COLLEGE, we are committed to providing our students with a world-class education that will prepare them for success in their chosen careers. We promise to offer a diverse range of high-quality programs. we will provide a supportive and inclusive learning environment that fosters critical thinking, creativity, and collaboration, as well as opportunities for hands-on learning and real-world experience.</p>
     <button> <a href="about.html">Lean More</a></button>
   </section>
 
@@ -168,21 +159,47 @@ document.addEventListener('click', function (e) {
     <div class="features">
       <div class="feature-item">
         <div class="feature-icon">
-          <i class="fas fa-file-alt"></i>
+          
+            <i class="fas fa-file-alt" id="redirectionIcon"></i>
+          <script>
+            icon = document.getElementById('redirectionIcon');
+            icon.addEventListener('click', 
+              function(){
+                window.location.href = 'courses.html'
+              }
+            )
+          </script>
+          
         </div>
         <h3>PROGRAMS</h3>
         <p>We offer KNEC Certified Programs</p>
       </div>
       <div class="feature-item">
         <div class="feature-icon">
-          <i class="fas fa-bell"></i>
+          <i class="fas fa-bell" id="redirectionIcon2"></i>
+          <script>
+            icon2 = document.getElementById('redirectionIcon2');
+            icon2.addEventListener('click', 
+              function(){
+                window.location.href = 'courses.html'
+              }
+            )
+          </script>
         </div>
         <h3>ONLINE ED</h3>
-        <p>We provide online classes to adapt to your work schedule</p>
+        <p>We both online and physical classes to adapt to your work schedule</p>
       </div>
       <div class="feature-item">
         <div class="feature-icon">
-          <i class="fas fa-award"></i>
+          <i class="fas fa-award" id="redirectionIcon3"></i>
+          <script>
+            icon3 = document.getElementById('redirectionIcon3');
+            icon3.addEventListener('click', 
+              function(){
+                window.location.href = 'courses.html'
+              }
+            )
+          </script>
         </div>
         <h3>AWARDS</h3>
         <p>A leading College with awards in the industrial field</p>
@@ -264,13 +281,30 @@ document.addEventListener('click', function (e) {
   }
 </style>
 </head>
-<body>
+
 <div class="brochure-container">
   <img src="assets/bronchure_image1.jpg" alt="Brochure">
   <img src="assets/bronchure_image2.jpg" alt="Brochure">
   <div class="brochure-caption">Our Latest Brochure</div>
-  <p class="brochure-text">Get a copy of our brochure for detailed information about our programs and offerings.</p>
+  <p class="brochure-text">Get a copy of our brochure for detailed information about our programs and offerings.
+    <style>
+       .brochure-text{
+      color: #f9f9fc !important;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    </style>
+  </p>
   <a href="assets/bronchure.pdf" class="download-button" download>Download Now</a>
+  <style>
+    .brochure-caption{
+      color: #f9f9fc !important;
+      background: rgba(0, 0, 0, 0.5);
+      max-width: fit-content;
+      margin-left: 40%;
+      border-radius: 5px;
+    }
+    </style>
 </div>
 
 <!--courses-->
@@ -348,11 +382,26 @@ document.addEventListener('click', function (e) {
   <a href="#top" class="back-to-top">
     &#x25B2; <!-- Upwards pointing arrow -->
   </a>
+
+
+ 
   
 
   <div class="footer-bottom">
+    <div class="partners">
+      <h3>Exermining Bodies</h3>
+      <div class="partner-logos">
+        <img class="partner-logo" src="assets/partner1.jpeg" alt="Uber" />
+        <img class="partner-logo" src="assets/partner2.jpeg" alt="Orda Africa" />
+        <img class="partner-logo" src="assets/partner3.jpeg" alt="MasterCard Visa" />
+        <img class="partner-logo" src="assets/partner4.jpeg" alt="Good Life Pharmacy" />
+        <img class="partner-logo" src="assets/partner5.jpeg" alt="Glovo" />
+      </div>
+    </div>
     &copy; 2025 <span>RCM College</span>. All Rights Reserved. 
   </div>
+  
+  
 </footer>
 
 
