@@ -39,12 +39,16 @@
   @media (max-width: 768px) {
     .contact-info {
       justify-content: space-between; /* Ensure better spacing for mobile */
-      padding: 2px 5px; /* Further reduce padding for smaller screens */
-      font-size: 11px; /* Slightly smaller font size for mobile */
+      padding: 2px 2px; /* Further reduce padding for smaller screens */
+      font-size: 10px; /* Slightly smaller font size for mobile */
+    }
+
+    .mailto{
+      display: none;
     }
   
     .contact-info a {
-      margin-left: 10px; /* Adjust margin for tighter space */
+      margin-left: 5px; /* Adjust margin for tighter space */
     }
   }
   
