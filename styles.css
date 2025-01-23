@@ -687,7 +687,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 5px; /* Reduced gap between footer items */
-  max-width: 1200px;
+  max-width: 100%;
+  margin-bottom: 0%;
   margin: 0 auto;
 }
 
@@ -1009,4 +1010,23 @@
   background-color: #45a049; /* Darker green */
 }
 
+.footer-rights{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20%;
+  max-width: 110%;
+  height: 10px;
+  background: #a5a2a4;
+}
+
+.footer-rights {
+  width: 100%; /* Ensure the div spans the full viewport width */
+  height: auto; /* Allow dynamic height adjustment */
+  background: #fca311; /* Set the desired background color */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; /* Add vertical padding for content spacing */
+  margin: 0; /* Remove negative margin */
+}
 
